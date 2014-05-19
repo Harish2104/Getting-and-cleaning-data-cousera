@@ -1,22 +1,24 @@
 Getting-and-cleaning-data-cousera
 =================================
-Original instructions:
-You should create one R script called run_analysis.R that does the following.
+Project for getdata-002 on Coursera.
 
-Merges the training and the test sets to create one data set.
-Extracts only the measurements on the mean and standard deviation for each measurement.
-Uses descriptive activity names to name the activities in the data set
-Appropriately labels the data set with descriptive activity names.
-Creates a second, independent tidy data set with the average of each variable for each activity and each subject.
-##Steps in run_analysis.R:
-download the UCI HAR Dataset into ./data
-expand the compressed dataset
-load the label codes key from activity_labels.txt
-load the feature key from features.txt
-determine the indices of desired features (those containing -mean() or -std())
-load the training and test data sets and only retain data columns determined by indices from step #5
-merge the training and test data sets
-replace label codes in the dataset with text labels determined by step #3
-reshape data to use label and subject as identifiers
-produce a tidy data set (HARUSD_means.txt) with the average of each variable for each activity/subject combination
-produce CodeBook.md with a list of column names (which were taken from features.txt)
+# Original instructions:
+You should create one R script called run_analysis.R that does the following. 
+* Merges the training and the test sets to create one data set.
+* Extracts only the measurements on the mean and standard deviation for each measurement. 
+* Uses descriptive activity names to name the activities in the data set
+* Appropriately labels the data set with descriptive activity names. 
+* Creates a second, independent tidy data set with the average of each variable for each activity and each subject. 
+
+# Steps in run_analysis.R:
+1. download the UCI HAR Dataset into ./data
+2. expand the compressed dataset
+3. load the label codes key from activity_labels.txt
+4. load the feature key from features.txt
+5. determine the indices of desired features (those containing -mean() or -std())
+6. load the training and test data sets and only retain data columns determined by indices from step #5
+7. merge the training and test data sets
+8. replace label codes in the dataset with text labels determined by step #3
+9. reshape data to use label and subject as identifiers
+10. produce a tidy data set (SD_means.txt) with the average of each variable for each activity/subject combination
+11. produce CodeBook.md with a list of column names (which were taken from features.txt)
